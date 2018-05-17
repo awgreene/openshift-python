@@ -3,7 +3,7 @@ import time
 import logging
 import os
 import sys 
-#logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
+logging.basicConfig(level=os.environ.get("LOGLEVEL", os.environ["LOG_LEVEL"]))
 while True:
     logging.critical("Logging Critical Logs")
     logging.error("Logging Error Logs")
